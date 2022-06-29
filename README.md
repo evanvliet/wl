@@ -1,15 +1,15 @@
-# wl
-comand line wordle filter
+wl
+==
 
-For use with bash, sed, etc. Includes word list extracted from wordle source. Usage:
+A comand line wordle filter, prints possible words.  Use from a bash prompt.
 
-From a bash prompt:
+#### Synopsis
 
-wl <green letters> <yellow letters> <black letters> [word list]
+wl \<green letters\> \<yellow letters\> \<black letters\> [word list]
   
-  <green letters> : ..a.b  iff 3rd and 5th letters are green
-  <yellow letters> : .e.h iff 2nd and 4th letters are yellow
-  <black letters> : jkl iff j k l all are black, use just . if none
-  [word list optional] word list, default is in same folder as script.
+  \<green letters\> : ..a.b  iff 3rd and 5th letters are green a and b  
+  \<yellow letters\> : .e.h iff 2nd and 4th letters are yellow e and h  
+  \<black letters\> : jks iff j, k, and s all are black 
+  [word list optional] word list, default is wl.dat in same folder as script.
     
-Uses sed to print possible words.
+Use just a . as place holder if there no characters of a particular color.  Also use . to place green and yellow letters.  Uses sed to print possible words.
